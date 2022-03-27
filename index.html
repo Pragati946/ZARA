@@ -7,13 +7,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+<style>
 
+  </style>
 </head>
 
-<body style="background-color: black;">
+<body style="background-color:black">
+   
     <div id="navbar">
-
+       
         <div id="zara">
+           <span id="menu" style="font-size:30px;cursor:pointer;color:white;" onclick="openNav()">&#9776;</span>  
             <div> <a href="index.html">
                     <img src="https://logo-base.com/logo/zara-logo-black-and-white-bw.png"
                         alt=""></div></a>
@@ -28,6 +32,40 @@
             <div><i class="fa-solid fa-bag-shopping"></i></div>
         </div>
     </div>
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+         <a href="women.html">WOMAN</a>
+        <a href="#">NEW</a>
+        <a href="#">BEST SELLERSNEW</a>
+        <a href="#">BLAZERS</a>
+        <a href="#">DRESSES | JUMPSUITS</a>
+        <a href="#">SHIRTS</a>
+        <a href="#">TROUSERS</a>
+        <a href="#">TOPS | CORSETS</a>
+        <a href="#">BODYSUITS</a>
+        <a href="#">T-SHIRTS</a>
+        <a href="#">JEANS</a>
+        <a href="#">SKIRTS</a>
+        <a href="#">SHORTS | SKORTS</a>
+        <a href="#">CO-ORD SETS</a>
+        <a href="#">SUITS</a>
+        <a href="#">BASICSNEW</a>
+        <a href="#">KNITWEAR</a>
+        <a href="#">SWEATSHIRTS</a>
+        <a href="#">COATS | TRENCH COATS</a>
+        <a href="#">JACKETS | OVERSHIRTS</a>
+        <a href="#">SHOES</a>
+        <a href="#">BAGS</a>
+        <a href="#">SWIMWEARNEW</a>
+        <a href="#">ACCESSORIES</a>
+        <a href="#">PERFUMES</a>
+        <a href="#">SPRING BREEZE</a>
+        <a href="#">SPECIAL PRICES</a>
+        <a href="#">SPECIAL EDITION</a>
+        <a href="#">JOIN LIFE</a>
+        
+      </div>
+
     <div id="home">
         <div class="img">
             <img src="https://static.zara.net/photos///contents/mkt/spots/ss22-north-woman-new/subhome-xmedia-12-1-dark-mode//w/671/IMAGE-large-landscape-2d9a60c0-de38-4915-83b6-a10adcd18039-default_0.jpg?ts=1647881844775"
@@ -61,6 +99,16 @@
 
 
     </div>
+
 </body>
 
 </html>
+<script>
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "250px";
+    }
+    
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+    }
+    </script>
