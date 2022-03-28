@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="cart">
+
+    </div>
+</body>
+</html>
+<script>
+    var cartArr=JSON.parse(localStorage.getItem("cart"));
+    function displayData(cartArr){
+     
+        
+    
+    document.querySelector("#cart").innerHTML=null; 
+    cartArr.map(function(elem){
+        var box = document.createElement("div");
+        box.addEventListener("click",function(){
+            addTobag(elem);
+        })
+      var image= document.createElement("img");
+      image.src=elem.imageUrl;
+      image.setAttribute("class","img")
+
+      var para = document.createElement("p");
+      para.innerText=elem.brandName;
+      para.setAttribute("class","p")
+
+      var price = document.createElement("p");
+      price.innerText=elem.priceOf;
+      price.setAttribute("class","rs")
+      console.log(image,para,price)
+
+      box.append(image,para,price);
+      document.querySelector("#cart").append(box);
+    })
+    }
+    displayData(cartArr);
+    
+</script>

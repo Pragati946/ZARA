@@ -5,59 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./style/style.css">
     <style>
-        #check{
-            color: white;
-            display: flex;
-            border-radius: 50%;
-            gap:10px
-        }
-        .p{
-            margin-left: 4px;
-            font-size: 19px;
-            margin-top:3%;
-            margin-bottom: 4%;
-        }
-        .c{
-            
-            margin-right: 70%;
-            font-size: 19px;
-            margin-top:3%;
-            margin-bottom: 4%;
-     
-        }
-        .cch{
-            margin-top:4%;
-            margin-bottom: 4%; 
-            border-radius: 50%;
-           
-        }
-        .pch{
-            margin-top:4%;
-            margin-bottom: 4%; 
-            margin-left: 15%;
-            border-radius: 50%;
-        }
-        h3{
-            margin-top: 10%;
-            font-size: 19px;
-            margin-left: 7%;
-
-        }
-        #create_account{
-            width:30%;
-            margin-left: 15%;
-        }
-       #created{
-        width:120%;
-       }
+       
+        
     </style>
 </head>
 <body>
     <div id="navbar">
 
         <div id="zara">
+            <span id="menu" style="font-size:30px;cursor:pointer;color:white;" onclick="openNav()">&#9776;</span>  
             <div> <a href="index.html">
                     <img src="https://logo-base.com/logo/zara-logo-black-and-white-bw.png"
                         alt=""></div></a>
@@ -69,6 +27,39 @@
             <div>HELP</div>
         </div>
     </div>
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a id="women" href="women.html">WOMAN</a>
+        <a id="man" href="men.html">MAN</a>
+        <a href="#">BEST SELLERSNEW</a>
+        <a href="#">BLAZERS</a>
+        <a href="#">DRESSES | JUMPSUITS</a>
+        <a href="#">SHIRTS</a>
+        <a href="#">TROUSERS</a>
+        <a href="#">TOPS | CORSETS</a>
+        <a href="#">BODYSUITS</a>
+        <a href="#">T-SHIRTS</a>
+        <a href="#">JEANS</a>
+        <a href="#">SKIRTS</a>
+        <a href="#">SHORTS | SKORTS</a>
+        <a href="#">CO-ORD SETS</a>
+        <a href="#">SUITS</a>
+        <a href="#">BASICSNEW</a>
+        <a href="#">KNITWEAR</a>
+        <a href="#">SWEATSHIRTS</a>
+        <a href="#">COATS | TRENCH COATS</a>
+        <a href="#">JACKETS | OVERSHIRTS</a>
+        <a href="#">SHOES</a>
+        <a href="#">BAGS</a>
+        <a href="#">SWIMWEARNEW</a>
+        <a href="#">ACCESSORIES</a>
+        <a href="#">PERFUMES</a>
+        <a href="#">SPRING BREEZE</a>
+        <a href="#">SPECIAL PRICES</a>
+        <a href="#">SPECIAL EDITION</a>
+        <a href="#">JOIN LIFE</a>
+        
+      </div>
     
     <h3>PERSONAL DETAILS</h3>
    <div id="check"> 
@@ -84,13 +75,13 @@
     </div>
    <form id="create_account">
     <input type="text" id="email" placeholder="E-MAIL"> <br><br>
-    <input type="text" id="password" placeholder="PASSWORD"><br><br>
+    <input type="password" id="password" placeholder="PASSWORD"><br><br>
     <input type="text" id="name" placeholder="NAME"><br><br>
     <input type="text" id="address" placeholder="ADDRESS"><br><br>
     <input type="text" id="locality" placeholder="LOCALITY"><br><br>
     <input type="text" id="state" placeholder="STATE"><br> <br>
     <input type="text" id="no" placeholder="PREFIX"> <br> <br> <br> <br>
-     <button id="created">CREATE ACCOUNT</button>
+     <input type="submit" id="submit" value="CREATE ACCOUNT">
 </form>
 <div id="footer">
     <div id="footer1">
@@ -146,5 +137,11 @@
        AVENIDA DE LA DIPUTACIÓN, EDIFICIO INDITEX, 15143, ARTEIXO (A CORUÑA), SPAIN </p>
        <br>
        <br><br><br><br><br><br><br><br><br><br><br>
+       
+       
+       </div>
 </body>
 </html>
+<script src="./javascript/createaccount.js">
+ 
+</script>

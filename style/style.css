@@ -5,18 +5,29 @@ body{
 /* ----------------------------NAVBAR-------------------------------------------- */
 
 
+#man{
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 40px;;
+    margin-top: 20px;;
+}
 
-
+#women{
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 40px;;
+}
 
   #navbar {
       display: flex;
       width: 100%;
+      /* margin-top: 2px; */
       /* background-color: black; */
-      margin: auto;
-      height: 80px;
+      /* margin: auto; */
+      /* height: 80px; */
       color: white;
       gap: 50%;
-      padding-top: 10px;
+      /* padding-top: 10px; */
       text-decoration: none;
       position: sticky;
       top: 0%;
@@ -24,7 +35,7 @@ body{
   }
 
   #navbar>div {
-      padding-top: 6px;
+      /* padding-top: 6px; */
       font-size: 22px;
       position: sticky;
 
@@ -43,7 +54,8 @@ body{
   #zara>div{
       margin-left: 40%;
       font-size: 40px;
-      height:40px;
+      /* height:40px; */
+      
 
     
   
@@ -51,6 +63,8 @@ body{
   #zara>div img{
       width:150%;
       height:100px;
+      /* margin-top: 2px; */
+
   }
  
 
@@ -60,6 +74,7 @@ body{
       padding-right: 60px;
       /* color: white; */
       cursor: pointer;
+      margin-top: 40px;
   }
 
   #search {
@@ -69,9 +84,11 @@ body{
     justify-content: center;
     /* margin:auto */
     display: flex;
-    padding-bottom: 10%;
+    
+    /* padding-bottom: 10%; */
 
 }
+
 /* ---------------------------HOME PAGE----------------------------------------- */
 
 
@@ -99,6 +116,7 @@ body{
 
 
 input{
+
     background-color:hsl(0, 0%, 0%);
     padding-bottom: 15px;
     color: white;
@@ -109,6 +127,7 @@ input{
     cursor: pointer;   
    
 }
+
 
 h3{
     color: white;
@@ -126,12 +145,14 @@ p{
    background-color: white;
    padding-top: 15px;
    width:120%;
+   height: 40px;
    padding-bottom: 15px;
    color: black;
    text-align: left;
    text-align: center;
 }
 #loginpage{
+    margin-top: 10%;
     display: flex;
   justify-content: space-around;
   color: black;
@@ -158,10 +179,6 @@ margin-top: 15%;
 line-height: 0px;
  
 }
-
-#footer>div :hover{ 
-text-decoration: underline;
-}
 #footer>div :hover{ 
 text-decoration: underline;
 }
@@ -185,6 +202,10 @@ font-size: 14px;
 display: flex;
 gap:25px;
 }
+#india>div{
+    font-size: 19px;
+}
+ 
 
 /* -----------------------------------CREATE ACCOUNT-------------------------------------------------- */
       
@@ -192,7 +213,8 @@ gap:25px;
     color: white;
     display: flex;
     border-radius: 50%;
-    gap:10px
+    gap:10px;
+  
 }
 .p{
     margin-left: 4px;
@@ -211,15 +233,16 @@ gap:25px;
 .cch{
     margin-top:4%;
     margin-bottom: 4%; 
-    border-radius: 50%;
-   
+    border-radius: 50%; 
+    padding-left:40px
 }
 .pch{
     margin-top:4%;
     margin-bottom: 4%; 
-    margin-left: 15%;
-    border-radius: 50%;
+    margin-left: 11%;
+   
 }
+
 h3{
     margin-top: 10%;
     font-size: 19px;
@@ -230,13 +253,19 @@ h3{
     width:30%;
     margin-left: 15%;
 }
-#created{
+#submit{
+background-color: white;
+padding-top: 15px;
 width:120%;
+padding-bottom: 15px;
+color: black;
+text-align: left;
+text-align: center;
+
 }  
 
 
 /* --------------------------  SIDE BAR------------------------------------- */
-
 body {
     font-family: "Lato", sans-serif;
   }
@@ -289,4 +318,115 @@ body {
   }
 
 
-  /* -----------------------------WOMEN.PAGE---------------------------------- */
+  /* -----------------------------MAN.PAGE_______WOMEN.PAGE---------------------------------- */
+  #container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    /* gap:30px; */
+    margin:auto;
+    justify-content: center;
+  
+
+}
+.img{
+    height:800px;
+    width: 70%;
+    /* margin: auto; */
+    margin-left: 15%;
+    margin-top: 20%;
+}
+.p{
+    text-align: center;
+}
+.rs{
+    text-align: center; 
+    font-size: 19px;;
+}
+
+
+/* -------------------------------------BAG-------------------------------------------------- */
+#men_left{
+    display: flex;
+     
+ }
+ #paradiv{
+     padding-top: 14%; 
+      padding-left: 8%;
+    
+ }
+ #paradiv p {
+    
+     text-align: left;
+     font-size: 15px;
+    
+     color: white;
+ }
+ #img_js{
+     /* justify-content: center; */
+     
+     height:800px;
+     width: 70%;
+     margin: auto;
+     margin-left: 13%;
+     margin-top: 5%;
+     margin-bottom: 20%;
+
+ }
+ #view:hover {
+     cursor: pointer;
+ }
+ #view{
+     text-decoration: underline;
+     
+ }
+h4{
+color: white;  
+}
+h5{
+color: white;
+}
+button{
+color: black;
+
+width:105%;
+height:40px;
+/* padding-right: 5%; */
+margin-left: 5px; 
+/* margin-top: 80%;   */
+
+}
+#paradiv_btn{
+margin-top: 9% ;
+margin-right: 8%;
+
+}
+#paradiv_btn p{
+font-size: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
