@@ -4,7 +4,7 @@ function openNav() {
   
   function closeNav() {
     document.getElementById("mySidenav").style.width = "0";
-  }s
+  }
 
 
 
@@ -37,6 +37,7 @@ var signupObj={
 signupArr.push(signupObj);
 console.log(signupArr)
 localStorage.setItem("userData",JSON.stringify(signupArr))
+alert("Creation Successful")
 var email=document.querySelector("#email").value="";
 var password=document.querySelector("#password").value="";
 var nam=document.querySelector("#name").value="";
